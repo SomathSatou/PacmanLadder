@@ -1,0 +1,115 @@
+.bandeauh {
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	background-color: darkred;
+	height: 150px;
+	width: 1000000px;
+}
+
+.bandeauh2 {
+	position: fixed;
+	z-index: 10;
+	top: 10px;
+	left: 200px;
+	font-family: "Blackadder ITC", "Comic Sans MS", "Times New Roman";
+	font-size: 250%;
+}
+
+.tabban {
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	right: 10px;
+	height: 150px;
+	border: 4px black;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+}
+
+.page {
+	position: relative;
+	z-index: 9;
+	top: 150px;
+}
+
+.page h1 {
+	font-family: "Comic Sans";
+	font-size: 125%;
+}
+
+.bandeauv {
+	position: fixed;
+	z-index: 10;
+	top: 150px;
+	right: 0px;
+	background-color: black;
+	height: 3000px;
+	width: 250px;
+}
+
+.bandeauv h1 {
+	font-family: "Comic Sans";
+	color: white;
+	position: relative;
+	right: -10px;
+	font-size: 100%;
+}
+
+body {
+	background-color: grey;
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	left: 10px;
+	height: 70%;
+}
+
+.asouligner {
+	text-decoration: underline;
+	font-size: 125%;
+}
+
+.bandeaub {
+	position: absolute;
+	left: 500px;
+}
+
+.titrep {
+	font-family: "Blackadder ITC", "Comic Sans MS", "Times New Roman";
+	font-size: 300%;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.logo {
+	position: relative;
+	left: 10px
+}
+/* Forms --------------------------------------------------------------------------------------- */
+form label {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form input {
+	margin: 7px 7px 0px 0px;
+	border: 1px #999 solid;
+}
+
+form input.sansLabel {
+	margin-left: 200px;
+}
+
+form .requis {
+	color: #c00;
+}
+
+.erreur {
+	color: #c00;
+}
