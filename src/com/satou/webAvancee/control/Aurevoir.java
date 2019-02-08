@@ -9,23 +9,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.satou.webAvancee.model.SessionBean;
-
 /**
- * Servlet implementation class SessionTest
+ * Servlet implementation class Aurevoir
  */
-@WebServlet( "/session" )
-public class SessionTest extends HttpServlet {
+@WebServlet( "/aurevoir" )
+public class Aurevoir extends HttpServlet {
     private static final long   serialVersionUID = 1L;
-    private static final String SESSION_JSP      = "/WEB-INF/Session.jsp";
-    private static final String PSEUDO_BAND      = "pseudoh";
-    private static final String PWD_BAND         = "pwdh";
-    private static final String LOG_SESSION      = "session";
+    private static final String TEST_JSP         = "/WEB-INF/inscription.jsp";
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SessionTest() {
+    public Aurevoir() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,7 +32,9 @@ public class SessionTest extends HttpServlet {
     protected void doGet( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
         // TODO Auto-generated method stub
-        this.getServletContext().getRequestDispatcher( SESSION_JSP ).forward( request, response );
+        HttpSession session = request.getSession();
+        session.invalidate();
+        this.getServletContext().getRequestDispatcher( TEST_JSP ).forward( request, response );
     }
 
     /**
@@ -47,12 +44,6 @@ public class SessionTest extends HttpServlet {
     protected void doPost( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
         // TODO Auto-generated method stub
-        String pseudo = request.getParameter( PSEUDO_BAND );
-        String password = request.getParameter( PWD_BAND );
-        HttpSession session = request.getSession();
-        SessionBean sessionBean = new SessionBean( pseudo, password );
-        session.setAttribute( LOG_SESSION, sessionBean );
-
         doGet( request, response );
     }
 
