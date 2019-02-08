@@ -9,17 +9,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class FisrtServlets
+ * Servlet implementation class Liste
  */
-@WebServlet( "/SoyLuna" )
-public class FirstServlets extends HttpServlet {
+@WebServlet( "/Score" )
+public class Liste extends HttpServlet {
     private static final long   serialVersionUID = 1L;
-    private static final String INDEX_JSP        = "/WEB-INF/index.jsp";
+    private static final String LISTE_JSP        = "/WEB-INF/scoreBoard.jsp";
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FirstServlets() {
+    public Liste() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,12 +30,8 @@ public class FirstServlets extends HttpServlet {
      */
     protected void doGet( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
-        String auteur = request.getParameter( "auteur" );
-        request.setAttribute( "test", auteur );
-
-        request.setAttribute( "user", test );
-        this.getServletContext().getRequestDispatcher( INDEX_JSP ).forward( request, response );
         // TODO Auto-generated method stub
+        this.getServletContext().getRequestDispatcher( LISTE_JSP ).forward( request, response );
     }
 
     /**

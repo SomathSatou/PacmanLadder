@@ -17,6 +17,21 @@
 	font-size: 250%;
 }
 
+.login {
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	right: 10px;
+	height: 150px;
+	font-family: "Blackadder ITC", "Comic Sans MS", "Times New Roman";
+	font-size: 150%;
+}
+
+.login input {
+	margin: 7px 7px 0px 0px;
+	border: 1px #999 solid;
+}
+
 .tabban {
 	position: fixed;
 	z-index: 10;

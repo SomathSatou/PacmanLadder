@@ -31,20 +31,20 @@
 
                     <label for="pseudo">Pseudo <span class="requis">*</span></label>
 
-                    <input type="text" id="pseudo" name="pseudo" value="<c:out value="${ pseudo }"/>" size="20" maxlength="20" />
+                    <input type="text" id="pseudo" name="pseudo" value="<c:out value="${ form.pseudo }"/>" size="20" maxlength="20" />
 
                     <br />
                     
                     
                     <label for="pwd">Mot de passe  <span class="requis">*</span></label>
                     
-                    <input type="password" id="pwd" name="pwd" value="<c:out value="${ pwd }"/>" size="20" maxlength="20" />
+                    <input type="password" id="pwd" name="pwd" value="<c:out value="${ form.pwd }"/>" size="20" maxlength="20" />
                     
                     <br/>
                     
                     <label for="pwd2">Confirmation du mot de passe  <span class="requis">*</span></label>
                     
-                    <input type="password" id="pwd2" name="pwd2" value="<c:out value="${ pwd2 }"/>" size="20" maxlength="20" />
+                    <input type="password" id="pwd2" name="pwd2" value="<c:out value="${ form.pwd2 }"/>" size="20" maxlength="20" />
                     
                     <br/>
                     
@@ -53,7 +53,7 @@
                     
                     <bbr />
 
-                    <input type="text" id="prenom" name="prenom" value="<c:out value="${ prenom }"/>" size="20" maxlength="20" />
+                    <input type="text" id="prenom" name="prenom" value="<c:out value="${ form.prenom }"/>" size="20" maxlength="20" />
 
                     <br />
 
@@ -61,20 +61,20 @@
 
                     <label for="nom">Nom </label>
 
-                    <input type="text" id="nom" name="nom" value="<c:out value="${ nom }"/>" size="20" maxlength="20" />
+                    <input type="text" id="nom" name="nom" value="<c:out value="${ form.nom }"/>" size="20" maxlength="20" />
 
                     <br />
                     
 
                     <label for="email">Adresse email <span class="requis">*</span></label>
 
-                    <input type="email" id="email" name="email" value="<c:out value="${ email }"/>" size="20" maxlength="60" />
+                    <input type="email" id="email" name="email" value="<c:out value="${ form.email }"/>" size="20" maxlength="60" />
 
                     <br />
 
                 </fieldset>
                 
-				<div Class="erreur"> ${ erreurs }</div>
+				<div Class="erreur"> ${ form.erreurs }</div>
 				
                 <input type="submit" value="Valider"  />
 

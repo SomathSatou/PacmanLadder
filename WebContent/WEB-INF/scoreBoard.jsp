@@ -6,7 +6,7 @@
 <head>
  <meta charset="utf-8"/>
   <link  type="text/css" href="resources/css/Naakon.css" rel="stylesheet"/>
-  <Title>MR Fromage</Title>
+  <Title>ScoreBoard</Title>
 </head>
 <body>
 	<!-- bandeau horizontal -->
@@ -17,17 +17,8 @@
 
 	<!-- page -->
 	<div class="page">
-		<div class="titrep">Inscription</div>
-		<!-- contenue de la page -->
-		<div>
-			<p>Désolé <c:out value="${ pseudo }" /> nous ne vous connaissons pas.</p>
-			
-			<p>Pour vous inscrire cliquez ici</p>
-				
-			<p> ${ login } 
-			${login==true}</p>
+		<div class="titrep">Tableau des scores</div>
 
-		</div>
 		<!-- bandeau bas de page -->
 		<a Class="bandeaub"
 			href="http://jigsaw.w3.org/css-validator/check/referer"> <img
